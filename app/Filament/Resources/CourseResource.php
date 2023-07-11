@@ -66,14 +66,13 @@ class CourseResource extends Resource
             ->columns([
                 TextColumn::make('title')
                     ->searchable(),
-                TextColumn::make('description')->html(),
-                TextColumn::make('duration')->label('Duration in minute'),
             ])
             ->filters([
                 //
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
+                Tables\Actions\ViewAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\DeleteBulkAction::make(),
@@ -92,6 +91,7 @@ class CourseResource extends Resource
         return [
             'index' => Pages\ListCourses::route('/'),
             'create' => Pages\CreateCourse::route('/create'),
+            'view' => Pages\ViewCourse::route('/{record}'),
             'edit' => Pages\EditCourse::route('/{record}/edit'),
         ];
     }

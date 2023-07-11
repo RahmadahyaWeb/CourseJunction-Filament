@@ -80,21 +80,19 @@ class MaterialResource extends Resource
     {
         return $table
             ->columns([
+                TextColumn::make('title')
+                    ->searchable(),
                 TextColumn::make('course.title')
                     ->label('Course')
                     ->searchable(),
-                TextColumn::make('title')
-                    ->searchable(),
-                TextColumn::make('duration')
-                    ->label('Duration in minute'),
-                TextColumn::make('embed_link')
-                    ->label('Embed Link')
+
             ])
             ->filters([
                 //
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
+                Tables\Actions\ViewAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\DeleteBulkAction::make(),
@@ -114,6 +112,7 @@ class MaterialResource extends Resource
             'index' => Pages\ListMaterials::route('/'),
             'create' => Pages\CreateMaterial::route('/create'),
             'edit' => Pages\EditMaterial::route('/{record}/edit'),
+            'view' => Pages\ViewMaterial::route('/{record}'),
         ];
     }
 

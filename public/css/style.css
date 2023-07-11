@@ -1,0 +1,45 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+/* Body */
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Text */
+.text-danger{
+    color: #EF6262 !important;
+}
+
+/* Button */
+.btn-danger{
+    background-color: #EF6262 !important;
+    border: none !important;
+}
+
+.btn-danger:hover{
+    background-color: #fa4a4afa !important;
+    border: none !important;
+
+}
+
+/* Navbar */
+.navbar{
+    background-color: #2f2e41;
+}
+
+/* Section */
+section#hero, section#about{
+    margin-bottom: 300px;
+}
+
+.hero-title{
+    font-size: 50px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .hero-title{
+        font-size: 40px;
+    }
+}

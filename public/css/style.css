@@ -6,6 +6,11 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+/* Backround */
+.border-danger{
+    border-color: #EF6262 !important;
+}
+
 /* Text */
 .text-danger{
     color: #EF6262 !important;
@@ -29,8 +34,19 @@ body{
 }
 
 /* Section */
-section#hero, section#about{
+section#hero, section#about {
     margin-bottom: 300px;
+    padding-top: 80px;
+}
+
+section#course{
+    margin-bottom: 300px;
+    padding-top: 100px;
+}
+
+/* Hero */
+section#hero{
+    margin-top: 20px;
 }
 
 .hero-title{
@@ -42,4 +58,26 @@ section#hero, section#about{
     .hero-title{
         font-size: 40px;
     }
+}
+
+/* pagination */
+.page-link:focus,.page-link:active {
+    outline: none !important;
+    box-shadow: none;
+ }
+
+
+
+.page-link{
+    color: #EF6262;
+}
+
+.page-link:hover{
+    color: #fa4a4afa;
+}
+
+/* Accordion */
+.accordion-button:focus{
+    border: none;
+    box-shadow: none !important;
 }

@@ -44,7 +44,7 @@ class MaterialResource extends Resource
                             ->preload(),
                         TextInput::make('title')
                             ->required()
-                            ->placeholder('Enter the embed link for the course material'),
+                            ->placeholder('Enter the title for the course material'),
                         RichEditor::make('description')
                             ->toolbarButtons([
                                 'blockquote',

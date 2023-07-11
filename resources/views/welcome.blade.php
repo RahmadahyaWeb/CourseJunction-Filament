@@ -8,7 +8,7 @@
                     Course Junction
                 </h1>
                 <p>Expand Your Knowledge for Free</p>
-                <a href="" class="btn btn-danger rounded-0">
+                <a href="/#course" class="btn btn-danger rounded-0">
                     Find a Course
                 </a>
             </div>
@@ -18,7 +18,7 @@
         </div>
     </section>
 
-    <section id="about" class="py-4">
+    <section id="about">
         <div class="row align-items-center justify-content-center">
             <div class="col-12 mb-5">
                 <h1 class="text-center">
@@ -47,4 +47,15 @@
 
         </div>
     </section>
+
+    <seection id="course" class="py-5">
+        <div class="row">
+            <div class="col-12 mb-5">
+                <h1 class="text-center">
+                    Find Your Favorite Course Here!
+                </h1>
+            </div>
+        </div>
+        @livewire('course')
+    </seection>
 @endsection

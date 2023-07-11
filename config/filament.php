@@ -5,12 +5,14 @@ use Filament\Http\Middleware\DispatchServingFilamentEvent;
 use Filament\Http\Middleware\MirrorConfigToSubpackages;
 use Filament\Pages;
 use Filament\Widgets;
+use Filament\Widgets\Widget;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 use Illuminate\Cookie\Middleware\EncryptCookies;
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
 use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\Session\Middleware\StartSession;
+// use Illuminate\Support\Facades\App;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 
 return [
@@ -105,7 +107,8 @@ return [
         'namespace' => 'App\\Filament\\Pages',
         'path' => app_path('Filament/Pages'),
         'register' => [
-            Pages\Dashboard::class,
+            // Pages\Dashboard::class,
+            App\Filament\Pages\Dashboard::class
         ],
     ],
 
@@ -140,7 +143,9 @@ return [
         'path' => app_path('Filament/Widgets'),
         'register' => [
             Widgets\AccountWidget::class,
-            // Widgets\FilamentInfoWidget::class,
+            // App\Filament\Resources\MaterialResource\Widgets\StatsOverviewMaterial::class,
+            // App\Filament\Resources\CourseResource\Widgets\StatsOverview::class,
+            App\Filament\Widgets\StatsOverviewDashboard::class
         ],
     ],
 

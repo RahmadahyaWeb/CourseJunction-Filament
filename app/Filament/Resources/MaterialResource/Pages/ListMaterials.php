@@ -16,4 +16,11 @@ class ListMaterials extends ListRecords
             Actions\CreateAction::make(),
         ];
     }
+
+    protected function getHeaderWidgets(): array
+    {
+        return [
+            MaterialResource\Widgets\StatsOverviewMaterial::class
+        ];
+    }
 }

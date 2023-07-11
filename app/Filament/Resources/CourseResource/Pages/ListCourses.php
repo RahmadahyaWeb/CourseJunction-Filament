@@ -16,4 +16,11 @@ class ListCourses extends ListRecords
             Actions\CreateAction::make(),
         ];
     }
+
+    protected function getHeaderWidgets(): array
+    {
+        return [
+            CourseResource\Widgets\StatsOverview::class
+        ];
+    }
 }

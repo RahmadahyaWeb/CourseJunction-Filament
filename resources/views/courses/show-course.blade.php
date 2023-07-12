@@ -44,6 +44,9 @@
                                             <iframe src="{{ $material->embed_link }}" title="YouTube video"
                                                 allowfullscreen></iframe>
                                         </div>
+                                        <a href="{{ $material->embed_link }}" class="mb-3">
+                                            Alternative link for the course video
+                                        </a>
                                         {!! $material->description !!}
                                     </div>
                                 </div>

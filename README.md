@@ -4,12 +4,11 @@ Perluas Pengetahuan Anda secara Gratis dengan Course Junction.
 
 ## Hero Section
 
-![Course Junction](https://i.imgur.com/6OJn72S.png)
+![Course Junction](https://i.imgur.com/6lm74s7.png)
 
 ## Dashboard
 
 ![Course Junction](https://i.imgur.com/qdwAdag.png)
-
 
 ## Apa itu Course Junction
 
@@ -29,6 +28,12 @@ Course Junction adalah platform online inovatif yang merevolusi cara individu me
 3. Responsive Page
 4. Login dan Logout
 5. Search Course Without Refresh Page
+
+## Demo
+
+```bash
+https://drive.google.com/file/d/1KseR5OqqVuEswIO-MzVrAulSsVTs9o6n/view?usp=sharing
+```
 
 ## Cara Instalasi
 
@@ -69,13 +74,12 @@ php artisan serve
 ```
 
 7. Buka browser dan ketikkan localhost:8000 atau 127.0.0.1:8000 (Default port: 8000).
-8. Untuk akses ke dalam halaman dashboard, tambahkan '/admin' di akhir URL
 
 ```bash
-127.0.0.1:8000/admin
+127.0.0.1:8000
 ```
 
-10. Login menggunakan akun dengan email dan password:
+9. Login menggunakan akun dengan email dan password:
 
 ```bash
 ardi@gmail.com
@@ -89,7 +93,7 @@ password
 
 ## Bagian Hero Section
 
-![Course Junction](https://i.imgur.com/6OJn72S.png)
+![Course Junction](https://i.imgur.com/6lm74s7.png)
 
 ## Bagian About
 

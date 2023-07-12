@@ -53,9 +53,7 @@ class CourseResource extends Resource
                             ->placeholder('Enter the course description'),
                         TextInput::make('duration')
                             ->required()
-                            ->placeholder('Enter the course duration in minute (e.g., 10)')
-                            ->type('number')
-                            ->maxLength(2),
+                            ->placeholder('Enter the course duration')
                     ])
             ]);
     }
@@ -73,6 +71,7 @@ class CourseResource extends Resource
             ->actions([
                 Tables\Actions\EditAction::make(),
                 Tables\Actions\ViewAction::make(),
+                Tables\Actions\DeleteAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\DeleteBulkAction::make(),
